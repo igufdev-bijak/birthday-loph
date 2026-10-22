@@ -69,7 +69,13 @@ nav a{color:var(--ink);text-decoration:none;font-size:.82rem;padding:8px 12px;bo
 @keyframes eq{to{height:18px}}
 #music{position:fixed;right:12px;top:calc(12px + env(safe-area-inset-top,0px));z-index:45;display:flex;gap:8px;align-items:center;padding:6px 10px}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
-</style></head><body>
+
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./supabase-config.js"></script>
+</head>
+<body>
+  
 <canvas id="cv" aria-hidden="true"></canvas>
 <div id="open"><div id="fls" aria-hidden="true"></div><div style="position:relative">
 <p style="letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;opacity:.7">Someone Special Has a Surprise for You</p>
